@@ -1,0 +1,187 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul , ol {list-style: none;}
+img {border: 0;}
+a{text-decoration: none;}
+body {font-family: arial , sans-serif; line-height: 1;
+    background-color: #222222;}
+.blind {text-indent: -9999px; display: none; line-height: 0; border: 0;}
+
+
+
+/*header*/
+header {
+    width: 100%;
+    background-color: #222222;
+    position: fixed;
+    box-shadow: 2px 2px 2px black;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    color: #8D999D;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.sub {
+    float: right;
+}
+.sub li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 50px;
+    
+}
+.sub a {
+    display: block;
+    color: #8D999D;
+}
+
+/*aside*/
+aside {
+    width: 300px;
+    background-color: #222222;
+    height: 100%;
+    position: fixed;
+    margin-top: 54px;
+    z-index: 1;
+}
+.gnb li{
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+.gnb li:hover , .gnb li:focus {
+    background-color: black;
+}
+#asideBar {
+    display: none;
+}
+
+
+.gnb a {
+    display: block;
+    color: #8D999D;
+    padding-left: 10px;
+}
+
+.gnb a:hover , .gnb a:focus ,header h1:hover , header h1:focus , .sub a:hover , .sub a:focus{
+    color: #fff;
+}
+
+.gnb i{
+    margin-right: 10px;
+}
+
+
+.content{
+    position: relative;
+    top: 54px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+    background: #fff;
+    line-height: 1.3em;
+}
+
+.content section {
+    width: 70%;
+    border-right: 1px solid #ddd;
+    padding-right: 50px;
+    margin-left: 300px;
+}
+section h3 {
+    margin: 20px 0;
+}
+
+.btnBox button{
+    width: 100px;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #aaa;
+}
+.btnBox button:hover {
+    background-color: #eee;
+}
+@media screen and (max-width:736px) and (orientation:landscape) {
+    aside {
+        width: 100px;
+        position: fixed;
+    }
+    
+    .content {
+        margin-left: 90px;
+        width: 100%;
+        padding: 10px 0 0 5px;
+        
+    }
+    .content section {
+        width: auto;
+        margin-left: 10px;
+        border: 0;
+        
+    }
+    .btnBox button {
+        width: 70px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:809px) and (orientation:portrait) {
+
+    aside {
+        width: 40px;
+        position: fixed;
+    }
+    .gnb li a span {
+        display: none;
+    }
+    .content {
+        margin-left: 30px;
+        width: 100%;
+        padding: 10px 0 0 5px;
+        
+    }
+    .content section {
+        width: auto;
+        margin-left: 10px;
+        border: 0;
+        
+    }
+    .btnBox button {
+        width: 70px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:353px){
+    header h1 {
+        
+        width: 100px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
