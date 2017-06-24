@@ -34,7 +34,6 @@ public class BoardDAOTest {
 		vo.setWriter("연습");
 		logger.info(vo.toString());
 		dao.create(vo);
-		
 	}
 	@Test
 	public void update() {

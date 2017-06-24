@@ -85,7 +85,7 @@ public class BoardController {
 		return "redirect:list";
 		
 	}
-	
+/*	
 	@RequestMapping(value = "listCri" , method = RequestMethod.GET)
 	public void listCri(Model model , Criteria cri) {
 		
@@ -99,7 +99,7 @@ public class BoardController {
 		
 		model.addAttribute("pageMaker" , pageMaker);
 		
-	}
+	}*/
 	@RequestMapping(value = "list" , method = RequestMethod.GET)
 	public void list(Model model , Criteria cri) {
 		
@@ -108,7 +108,6 @@ public class BoardController {
 		pageMaker.setTotalCount(service.listSearchCount(cri));
 		model.addAttribute("cri", cri);
 		model.addAttribute("list", service.listSearch(cri));
-		
 		model.addAttribute("pageMaker" , pageMaker);
 		
 	}

@@ -32,7 +32,7 @@
           	   <li><a href="/"><i class="fa fa-home"></i><span>Main</span></a></li>
                <li><a href="/board/list"><i class="fa fa-book"></i><span>Board</span></a></li>
                <li><a href="#"><i class="fa fa-picture-o"></i><span>Gallery</span></a></li>
-               <li><a href="#"><i class="fa fa-github"></i><span>Github</span></a></li>
+               <li><a href="https://github.com/chlcc/sup2is" target="_blank"><i class="fa fa-github"></i><span>Github</span></a></li>
            </ul>
        </nav>
    </aside>
@@ -52,7 +52,7 @@
             </p>
             <h3>Introduce</h3>
             <p>
-            	Spring framework MVC기반으로 작성한 게시판 포트폴리오입니다. <br>
+            	Spring framework MVC기반으로 작성한 게시판CRUD, 검색기능 , Ajax를 활용한 댓글CRUD 기능을 가지고 있는 게시판 포트폴리오입니다. <br>
         		소스코드는 좌측 Github에서 확인하실수 있습니다.<br>
             </p>
             <h3>Process</h3>

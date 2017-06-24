@@ -77,7 +77,7 @@ aside {
     margin-right: 10px;
 }
 
-
+/* content */
 .content{
     position: relative;
     top: 54px;
@@ -98,6 +98,9 @@ section h3 {
     margin: 20px 0;
 }
 
+
+/* button */
+
 .btnBox button{
     width: 100px;
     line-height: 30px;
@@ -108,6 +111,159 @@ section h3 {
 .btnBox button:hover {
     background-color: #eee;
 }
+
+/* list */
+   table.list {
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	margin : 20px 10px;
+    width: 100%;
+    text-align: center;
+}
+tr:hover {
+    background-color: #eee;
+}
+table.list th {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+table.list th:nth-child(2), table.list td:nth-child(2){
+	text-align: left;
+}
+table.list td {
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+
+}
+
+table.list a {
+	color: #111;
+}
+table.list a:visited {  
+	color: #aaa;
+}
+
+.pageBtn {
+    width: 100%;
+    text-align: center;
+}
+.pageBtn li {
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+}
+.pageBtn li a {
+    display: block;
+    color: #111;
+}
+.pageBtn li a:visited {
+	color: #aaa;
+	
+}
+.pageBtn li a:focus { 
+	color: red;
+}
+
+
+
+    	/* regist , read , modify */
+    	
+    	/* input */
+       .inputBox {
+            border: 1px solid black;
+        }
+        .inputText {
+            margin-bottom: 15px;
+        }
+        .inputText input ,.inputText textarea {
+            background-color: #eee;
+            line-height: 30px;
+            font-size: 1.3em;
+            border-radius: 2px;
+            transition: all .5s;
+            width: 90%;
+            padding: 5px;
+        }
+        label { 
+        	font-size: 1.2em;
+        }
+        form i {
+        	margin-left: 5px;
+        }
+
+        
+        section {
+        	margin-bottom: 15px;
+        } 
+      
+        /* reply */
+        .repliesBox{
+        	width: 90%;
+        	background-color: #eee;
+        	box-shadow: 1px 1px 5px black;
+        	margin: 15px 0;
+        	padding: 5px;
+        	
+        }
+        .replyTime {
+        	float :right;
+        	font-size: 0.9em;
+        	color: #aaa; 
+        	padding-right: 5px;
+        } 
+        .repliesBox h3 {
+			margin: 0 0 3px 0;
+			font-size: 1em;
+			font-weight : normal; 
+			border-bottom: 1px solid #aaa;
+        }
+        .repliesBox button {
+            width: 70px;
+            line-height: 20px;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #aaa;
+        }
+        
+        .repliesBox button:hover{
+            background-color: #eee;
+        }
+        
+        /* modal */
+        #mask { 
+         	position:fixed;
+        	left: 0;
+        	top: 0;
+        	display : none;
+        	z-index: 9000;
+        	background-color: #222222;
+        	opacity: .3;
+        	cursor: pointer;
+        }
+        
+        .modal {
+        	position: fixed;
+        	width: 500px;
+        	height: 300px;
+         	top : -300px;
+         	left: 50%; 
+         	margin-left: -250px;
+         	margin-top: -150px; 
+			background-color: rgba(34,34,34,0.9);
+         	z-index: 9999;
+         	color: #fff;
+         	padding: 20px;  
+   
+        } 
+
+
+/* 반응형 */
 @media screen and (max-width:736px) and (orientation:landscape) {
     aside {
         width: 100px;
@@ -129,6 +285,15 @@ section h3 {
     .btnBox button {
         width: 70px;
         line-height: 20px;
+    }
+    
+    .modal {
+    	width: 320px;
+    	height: 230px;
+     	top : -200px;
+     	left: 50%; 
+     	margin-left: -160px;
+     	margin-top: -115px; 
     }
 }
 
@@ -156,6 +321,14 @@ section h3 {
     .btnBox button {
         width: 70px;
         line-height: 20px;
+    }
+     .modal {
+    	width: 320px;
+    	height: 230px;
+     	top : -200px;
+     	left: 50%; 
+     	margin-left: -160px;
+     	margin-top: -115px; 
     }
 }
 
